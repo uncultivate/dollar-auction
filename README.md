@@ -1,4 +1,4 @@
-# Dollar Auction Simulator
+# Dollar Auction Challenge
 
 This Jupyter notebook simulates the Dollar Auction game, a game theory experiment that demonstrates how rational decision-making can lead to seemingly irrational outcomes.
 
