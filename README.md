@@ -5,7 +5,7 @@ This Jupyter notebook simulates the Dollar Auction game, a game theory experimen
 ## Overview
 
 In the Dollar Auction game:
-- A $1 bill is auctioned off
+- A $1 coin is auctioned off
 - Players can bid in increments of $0.05
 - The highest bidder wins the dollar
 - Both the highest and second-highest bidders must pay their bids
