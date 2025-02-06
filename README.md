@@ -45,6 +45,7 @@ def my_strategy(num_players, bid_history, money):
   if current_bid < 0.50: # Only bid if current bid is under 50 cents
     return current_bid + 0.05
   return False
+```
 
 
 Return values:
@@ -64,6 +65,7 @@ Return values:
 Use `run_single_auction()` with a list of player names to simulate an auction:
 ```python
 run_single_auction(['Cautious Carl', 'nervous_nelly', 'over_my_limit'])
+```
 
 
 The simulation will track scores across multiple auctions and display results after each game.
