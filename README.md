@@ -34,17 +34,17 @@ Install required packages using:
 
 You can create new bidding strategies by defining functions that take three parameters:
 - `num_players`: Total number of players in the auction
-- `bid_history`: DataFrame containing previous bids
+- `bid_history`: DataFrame containing previous bids with columns 'player' and 'bid'
 - `money`: Current amount of money available to the player
 
 Example strategy:
 
 ```python
 def my_strategy(num_players, bid_history, money):
-current_bid = bid_history.iloc[-1]['bid']
-if current_bid < 0.50: # Only bid if current bid is under 50 cents
-return current_bid + 0.05
-return False```
+  current_bid = bid_history.iloc[-1]['bid']
+  if current_bid < 0.50: # Only bid if current bid is under 50 cents
+    return current_bid + 0.05
+  return False
 
 
 Return values:
@@ -63,7 +63,7 @@ Return values:
 
 Use `run_single_auction()` with a list of player names to simulate an auction:
 ```python
-run_single_auction(['Cautious Carl', 'nervous_nelly', 'over_my_limit'])```
+run_single_auction(['Cautious Carl', 'nervous_nelly', 'over_my_limit'])
 
 
 The simulation will track scores across multiple auctions and display results after each game.
